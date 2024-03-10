@@ -1,0 +1,57 @@
+Create schema in any Database script or any ORM (Object Relational Mapping?
+
+
+product Table :
+
+CREATE TABLE product (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Desc TEXT,
+    Sku VARCHAR(50),
+    Category_id INT,
+    Inventory_Id INT,
+    Price DECIMAL(10, 2),
+    Discount_Id INT,
+    Created TIMESTAMP,
+    Modified TIMESTAMP,
+    Deleted TIMESTAMP
+);
+
+
+Product_category Table :
+
+CREATE TABLE product_category (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Desc TEXT,
+    Created TIMESTAMP,
+    Modified TIMESTAMP,
+    Deleted TIMESTAMP
+);
+
+
+
+product_inventory Table :
+
+  CREATE TABLE product_inventory (
+    Id INT PRIMARY KEY,
+    Quantity INT,
+    Created TIMESTAMP,
+    Modified TIMESTAMP,
+    Deleted TIMESTAMP
+);
+
+
+
+
+ Discount Table:
+
+  CREATE TABLE discount (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Desc TEXT,
+    Activity BOOLEAN,
+    Created TIMESTAMP,
+    Modified TIMESTAMP,
+    Deleted TIMESTAMP
+);

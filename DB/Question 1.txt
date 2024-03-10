@@ -1,0 +1,5 @@
+Explain the relationship between the "Product" and "Product_Category" entities from the above diagram.
+
+Ans :
+
+    The relationship between the "product" table and the "product_category" table is established through the "Category id" attribute in the "product" table, which references the "Id" attribute in the "product category" table. This creates a foreign key relationship, linking each product to a specific category in the product category table.
